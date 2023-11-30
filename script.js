@@ -29,4 +29,8 @@ class Vector{
         let sy = this.y - vec.y;
         return new Vector(sx, sy);
     }
+
+    dotProduct(vec){
+        return (vec.x*this.x) + (vec.y *this.y) * Math.cos(Math.abs(this.theta-vec.theta))
+    }
 }  
