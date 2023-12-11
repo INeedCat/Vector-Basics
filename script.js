@@ -13,21 +13,15 @@ class Vector{
     }
 
     normalize(){
-        let nx = Math.cos(this.theta);
-        let ny = Math.sin(this.theta);
-        return new Vector(nx, ny);
+        return new Vector(Math.cos(this.theta, Math.sin(this.theta);
     }
 
     add(vec){
-        let ax = this.x + vec.x;
-        let ay = this.y + vec.y;
-        return new Vector(ax, ay);
+        return new Vector(this.x + vec.x, this.y + vec.y);
     }
 
     sub(vec){
-        let sx = this.x - vec.x;
-        let sy = this.y - vec.y;
-        return new Vector(sx, sy);
+        return new Vector(this.x - vec.x, this.y - vec.y);
     }
 
     dotProduct(vec){
